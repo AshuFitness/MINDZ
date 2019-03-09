@@ -1,0 +1,337 @@
+<resources>
+
+    <string name="app_name">HOMIEZ-IN</string>
+
+    <!--Selection Page/ Signup Next Page-->
+    <string name="salaried">Salaried</string>
+    <string name="self_entrepreneur">Self \n Entrepreneur</string>
+    <string name="celebrity">Celebrity</string>
+    <string name="politician">Politician</string>
+    <string name="sports">Sports</string>
+    <string name="police">Police</string>
+    <string name="company">Company</string>
+    <string name="government_officials">Government \n Officials</string>
+    <string name="show_pwd">Show Password</string>
+    <string name="hide_pwd">Hide Password</string>
+    <string name="what_s_on_your_mind">What\'s on your mind?</string>
+    <string name="invalid_email">Invaild Email ID</string>
+    <string name="invalid_mobile">Invaild Mobile Number.</string>
+    <string name="incorrect_pass">Incorrect Password</string>
+    <string name="all_fields_req">All Fields are required!!</string>
+    <string name="choose_loc">Please choose Exact  Location</string>
+
+
+    <!--Ward Activity-->
+    <string name="crime">Crime</string>
+    <string name="infrastructure_problems">Infrastructure \n Problems</string>
+    <string name="fun_activity">Fun \n Activity</string>
+    <string name="opportunity">Opportunity</string>
+    <string name="ward_members">Ward Members :</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="filter">Filter</string>
+    <string name="wards">Wards</string>
+    <string name="todo">TODO</string>
+
+
+    <string name="menu_settings">Settings</string>
+    <string name="str_atv_places">Enter Place Here</string>
+
+    <string name="google_maps_api_key">AIzaSyC7k4fq3cdlMXmN1z-vs3JKKbUyrCe9f5Q</string>
+    <string name="email_exists">Email Already Exists</string>
+    <string name="mobile_num__exists">Mobile Number Already Exists</string>
+
+
+    <!--splash-->
+    <string name="splash_title">@string/app_name</string>
+    <string name="splash_description">Extremely Smooth and Easy\nCropping library for you</string>
+    <string name="splash_start">Start</string>
+
+
+    <string name="editing">Editing</string>
+
+
+    <!--error-->
+    <string name="error_permission_denied">Authority does not allow</string>
+    <string name="error_permission_is_off">Authority is OFF.</string>
+
+
+    <string name="customGallery">Custom Gallery</string>
+    <string name="mainTitle">Select MultipleImages From Gallery</string>
+    <string name="openCustomGallery">Open Custom Gallery</string>
+    <string name="selectedImages">Selected Images will display below</string>
+
+
+    <string name="label_create_post_activity">Create post</string>
+    <string name="label_post_detail_activity">Post detail</string>
+    <string name="label_image_detail_activity">Image</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_create_profile">Create profile</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_edit_profile">Edit profile</string>
+    <string name="title_activity_edit_post">Edit post</string>
+
+    <string name="text_take_photo">Take photo</string>
+    <string name="text_pick_photo">Pick from Gallery</string>
+    <string name="button_title_cancel">Cancel</string>
+    <string name="button_ok">OK</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+
+    <string name="message_post_was_created">Post was created</string>
+    <string name="error_fail_create_post">Fail to create post</string>
+    <string name="error_fail_load_image">Fail to load image</string>
+    <string name="error_fail_crop_image">Fail to crop image</string>
+    <string name="error_smaller_image">Image is too small. Required image size 100x100 px</string>
+    <string name="error_incorrect_file_type">Incorrect file type</string>
+    <string name="error_bigger_file">File size is bigger than 10Mb</string>
+    <string name="message_creating_post">Creating post ..</string>
+    <string name="message_saving">Saving ..</string>
+    <string name="warning_empty_image">Image is required</string>
+    <string name="warning_empty_title">Title is required</string>
+    <string name="warning_empty_description">Description is required</string>
+    <string name="error_post_title_length">Max length of the title should be less than 255 symbols</string>
+    <string name="error_fail_remove_post">Fail to remove post</string>
+    <string name="message_post_was_removed">Post was removed</string>
+    <string name="error_fail_update_post">Fail to update post</string>
+    <string name="error_post_was_removed">Post was removed</string>
+    <string name="confirm_deletion_post">Delete this post?</string>
+
+    <string name="comment_text_hint">Enter your comment…</string>
+    <string name="button_post_comment">Post comment</string>
+
+    <string name="label_comments">Comments (%1$d):</string>
+
+    <string name="create_post_menu_label">Post</string>
+    <string name="create_post_full_menu_label">Create post</string>
+    <string name="sign_out_menu_label">Sign out</string>
+    <string name="edit_profile_menu_label">Edit profile</string>
+    <string name="button_title_save">Done</string>
+    <string name="button_title_continue">Continue</string>
+
+    <!-- Strings related to registration and login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_conf_password">Confirm password</string>
+    <string name="action_create_profile">Continue</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_profile_name_length">Max length of the name should be less than 120 symbols</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_confirm_password">Wrong password confirmation</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="permissions_not_granted">Cancelling, required permissions are not granted</string>
+    <string name="error_fail_create_profile">Fail to create profile</string>
+    <string name="error_fail_update_profile">Fail to update profile</string>
+    <string name="text_login">Thank you for using our application! Please, sign in for continue your action.</string>
+    <string name="error_authentication">Authentication failed.</string>
+    <string name="error_google_play_services">Google Play Services error.</string>
+    <string name="button_login_with_facebook">Login with facebook</string>
+    <string name="button_login_with_google">Login with google</string>
+
+
+    <string name="loading">Loading...</string>
+    <string name="removing">Removing...</string>
+    <string name="error_general">Somthing went wrong.</string>
+    <string name="error_general_post">Somthing went wrong with post, id: %1$s</string>
+    <string name="internet_connection_failed">No internet connection</string>
+
+    <!-- Strings related to login -->
+
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="profile_menu_item">Profile</string>
+    <string name="collapse_text_label">show less</string>
+    <string name="expand_text_label">show more</string>
+    <string name="add_complain">Complain</string>
+    <string name="edit_post_menu">Edit post</string>
+    <string name="delete_post_menu">Delete post</string>
+    <string name="complain_text">You can complain to this post if it contains violence,
+        bullying and threats, hate speech, tragic events and sexually explicit contents.
+        Nobody will see the post if you complain to it. You can\'t delete your complain.</string>
+
+    <string name="send_comment_button_label">Send</string>
+    <string name="posted_by_label">Posted by:</string>
+
+    <plurals name="posts_counter_format">
+        <item quantity="one">post</item>
+        <item quantity="other">posts</item>
+    </plurals>
+
+    <plurals name="likes_counter_format">
+        <item quantity="one">like</item>
+        <item quantity="other">likes</item>
+    </plurals>
+
+    <string name="posts_label">Posts:</string>
+    <string name="complain_sent">Complain was sent successfully</string>
+    <string name="now_time_range">now</string>
+
+    <string name="duration_minutes_shortest">%1$d m</string>
+    <string name="duration_hours_shortest">%1$d h</string>
+    <string name="duration_days_shortest">%1$d d</string>
+    <string name="duration_week_shortest">%1$d w</string>
+
+    <string name="post_image_transition_name" translatable="false">post_image_transition</string>
+    <string name="post_author_image_transition_name" translatable="false">post_author_image_transition_name</string>
+    <string name="message_new_post_was_created">New post was created</string>
+
+    <plurals name="new_posts_counter_format">
+        <item quantity="one">%1$d new post</item>
+        <item quantity="other">%1$d new posts</item>
+    </plurals>
+
+    <string name="edit_comment_menu_item">Edit</string>
+    <string name="delete_comment_menu_item">Delete</string>
+    <string name="message_comment_was_removed">Comment was removed</string>
+    <string name="message_comment_was_edited">Comment was edited</string>
+    <string name="title_edit_comment">Edit comment</string>
+
+    <!--Firebase errors-->
+    <string name="permission_denied_error">Please check your rules to access the Firebase Realtime Database</string>
+
+    <string name="attherate">#</string>
+    <string name="big_string">This tutorial is to learn how to show the current location on map in an Android application using Google Maps API. Previously we have seen tutorials to get the current location using the different location providers. If you are looking to just get the latitude and longitude of a location, the refer get current location using Android Fused location provider tutorial. In this tutorial we will use the location manager to get the best provider for the device and use it to get the current location. Then the current location will be shown in the Google map using a marker.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_ok">ok</string>
+    <string name="label_cancel">cancel</string>
+    <string name="permission_title_rationale">giving permissions</string>
+
+    <string name="trimming_progress">video is trimming..</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <string name="Q1">1. Can I Trust Service4u Service Partner visiting my home?</string>
+
+    <string name="Q1_ANS">At Service4u, we verify background of service professionals. Each personnel are checked with their skills, behaviour and quality. We also conduct professional training and grooming. </string>
+
+    <string name="Q2">2. What is the difference between Inspection and Service charge?</string>
+
+    <string name="Q2_ANS"> nspection charge is basic minimum fare against visit of professional to assess the job at the spot. Wherein Service Charge is the fare to serve the purpose/complete of the job. Materials/replacement will be charged extra on actuals with invoice to provide convenience.</string>
+
+    <string name="Q3">3. How do i make an online payment after selecting COD mode?</string>
+
+    <string name="Q3_ANS">Go to \'My Orders\' on Service4u App/portal and you will have an option to make online payment before the job is completed</string>
+
+    <string name="Q4">4. Can i recommend this app to my friends?</string>
+
+    <string name="Q4_ANS">Yes, you can by using share option in your my wallet.</string>
+
+    <string name="Q5">5. What is guest user?</string>
+
+    <string name="Q5_ANS">If you don\'t have an user login name and password, but you do receive emails with links to certain documents, you have been set up as a guest user. And as a guest user you can\'t able to get any offers and discounts.</string>
+
+    <string name="Q6">6. I have not received my order?</string>
+
+    <string name="Q6_ANS">There may be times when a mistake has been made and items from your order are missing when the delivery is made. If possible, you should go through your delivery with the driver to confirm the correct items have been delivered. If something is missing, you can contact us and we can contact the takeaway on your behalf as soon as possible so the takeaway can be given the opportunity to resolve the problem. You can contact us at (9937911281)</string>
+
+    <string name="Q7">7. I have issue with my payment?</string>
+
+    <string name="Q7_ANS"> Fix payment issues on your account. If your payment is declined, can\'t be processed, or is listed as "not eligible," try the troubleshooting steps below. These steps may also help if you have seen one of these error messages. Or else i. Try using a different payment method or a different card. ii. Go back to the checkout page and try again. </string>
+
+
+    <string name="label_brush">Brush</string>
+    <string name="label_emoji">Emoji</string>
+    <string name="label_sticker">Sticker</string>
+    <string name="label_eraser">Eraser</string>
+    <string name="label_text">Text</string>
+    <string name="label_filter">Filter</string>
+    <string name="label_adjust">Adjust</string>
+    <string name="logout_text">Are you sure, you want to logout?</string>
+
+
+    <string name="faq">FAQs</string>
+    <string name="find_friends">Find Friends</string>
+    <string name="blocklist">Blocklist</string>
+
+    <string name="privacy">Privacy</string>
+    <string name="about">About</string>
+
+    <string name="pokelist">Pokelist</string>
+    <string name="helpandsuport">Help and Support</string>
+    <string name="settingsglobal">Settings</string>
+    <string name="notify">Notification</string>
+
+
+</resources>

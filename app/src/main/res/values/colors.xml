@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#0097D3</color>
+    <color name="colorPrimaryDark">#0281b4</color>
+
+    <!--<color name="colorPrimary">#9d0101</color>-->
+    <!--<color name="colorPrimaryDark">#c10404</color>-->
+    <color name="colorAccent">#edf17c</color>
+    <color name="title_color">#000</color>
+    <color name="edit_profile">#5F76BF</color>
+    <color name="bottom_black_bgcolor">#90000000</color>
+
+
+    <color name="black_87">#DE000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_54">#8A000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_40">#64000000</color>
+    <color name="black_38">#61000000</color>
+    <color name="black_32">#52000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_12">#1F000000</color>
+    <color name="white_90">#E6FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_40">#64FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_12">#1FFFFFFF</color>
+
+    <color name="ripple_dark">@color/white_20</color>
+    <color name="ripple_light">@color/black_12</color>
+
+    <color name="splash_top">#1E5649</color>
+    <color name="splash_bottom">#222222</color>
+
+    <color name="background_color">#494b4a</color>
+    <color name="colorFAB">#df2532</color>
+
+
+
+    <color name="blue_1">#eae9fe</color>
+
+    <color name="blue_2">#ccc8fc</color>
+
+    <color name="blue_3">#ada8fb</color>
+
+    <color name="blue_4">#8f87f9</color>
+
+    <color name="blue_5">#7067f8</color>
+
+    <color name="black">#000000</color>
+
+    <color name="red">#ff0000</color>
+
+    <color name="green">#00ff00</color>
+
+    <color name="light_blue">#13BFFF</color>
+
+    <color name="gray">#6E6E6F</color>
+
+    <color name="black_background">#2C2D2E</color>
+
+    <color name="rocket_fire">#EFC75E</color>
+
+
+    <color name="colorFAB1">#2196F3</color>
+    <color name="colorFAB2">#E040FB</color>
+
+
+
+    <color name="primary">#0097D3</color>
+
+    <color name="primary_dark_text">#28333D</color>
+    <color name="secondary_text">#434343</color>
+    <color name="secondary_light">#979797</color>
+
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="custom_divider_color">#dfdfdf</color>
+    <color name="highlight_text">#17a1d7</color>
+
+    <color name="send_button_color">@color/primary</color>
+
+    <color name="light_gray">#d8d6d5</color>
+    <color name="posts_counter_bg">#df3e3e3e</color>
+
+    <color name="like_icon_activated">#FF5252</color>
+    <color name="icons_counter_color">#828181</color>
+    <color name="circle_image_shadow">#8b8b8b</color>
+
+    <color name="send_comment_button_activated">#0097d3</color>
+    <color name="send_comment_button_deactivated">#7fcbe9</color>
+
+
+    <color name="dart_transparent">#81000000</color>
+
+    <color name="facebook_button_color">#3b5999</color>
+    <color name="facebook_button_color_pressed">#2f477a</color>
+    <color name="google_button_color">#d44837</color>
+    <color name="google_button_color_pressed">#FFA43528</color>
+    <color name="button_pressed_text_color">#bcbcbc</color>
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "20417095967",
+    "firebase_url": "https://homiez-in.firebaseio.com",
+    "project_id": "homiez-in",
+    "storage_bucket": "homiez-in.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20417095967:android:a28ca997faf53327",
+        "android_client_info": {
+          "package_name": "com.mindzglobal.www.mindz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20417095967-jik6u9imul5gneee5dl3hlid4sgtlu57.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mindzglobal.www.mindz",
+            "certificate_hash": "883fe23d52344ad780cb8f600b1d5b21562422cc"
+          }
+        },
+        {
+          "client_id": "20417095967-86erujk9tfiea79e7qbvbqr1msjhdkpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7k4fq3cdlMXmN1z-vs3JKKbUyrCe9f5Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20417095967-86erujk9tfiea79e7qbvbqr1msjhdkpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

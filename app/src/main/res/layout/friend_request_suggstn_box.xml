@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:background="#1a1a1a">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/sugg_circle"
+            android:layout_margin="5dp"/>
+
+
+        <custom_font.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_toRightOf="@+id/sugg_circle"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:text="Abhi"
+            />
+
+
+        <custom_font.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/sugg_circle"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Category"
+            android:textSize="13sp"
+            />
+
+
+
+        <info.hoang8f.widget.FButton
+            android:layout_height="30dp"
+            android:layout_width="50dp"
+            fbutton:buttonColor="@color/colorPrimary"
+            fbutton:shadowColor="@color/colorPrimary"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:text="Follow"
+            android:textAllCaps="false"
+            android:id="@+id/follow_recru"
+            android:layout_centerVertical="true"
+            />
+
+
+
+        <!--<info.hoang8f.widget.FButton-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_width="50dp"-->
+            <!--fbutton:buttonColor="@color/colorPrimary"-->
+            <!--fbutton:shadowColor="@color/colorPrimary"-->
+            <!--fbutton:shadowEnabled="true"-->
+            <!--fbutton:shadowHeight="5dp"-->
+            <!--fbutton:cornerRadius="5dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:text="Following"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:id="@+id/added_tagg"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userid"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FriendRequest.global.SettingsFragment"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/filter_box_grey_settings"
+        android:id="@+id/relative_findfrnd">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="find friends"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="12dp"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/filter_box_grey_settings"
+        android:id="@+id/block_list"
+        android:layout_below="@+id/relative_findfrnd">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Blocklist"
+            android:drawableLeft="@drawable/block_icon"
+            android:drawablePadding="12dp"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/filter_box_grey_settings"
+                android:id="@+id/poke_list"
+                android:layout_below="@+id/block_list">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Pokelist"
+                    android:drawableLeft="@drawable/poke_icon"
+                    android:drawablePadding="12dp"
+                    android:padding="5dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/filter_box_grey_settings"
+        android:id="@+id/help_support"
+        android:layout_below="@+id/poke_list"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Help and Support"
+            android:drawableLeft="@drawable/help_suport_icon"
+            android:drawablePadding="12dp"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/filter_box_grey_settings"
+        android:id="@+id/settings_global"
+        android:layout_below="@+id/help_support"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Settings"
+            android:drawableLeft="@drawable/settings_icon"
+            android:drawablePadding="12dp"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/filter_box_grey_settings"
+        android:id="@+id/privacy_global"
+        android:layout_below="@+id/settings_global"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Privacy"
+            android:drawableLeft="@drawable/privacy_icon"
+            android:drawablePadding="12dp"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/filter_box_grey_settings"
+        android:id="@+id/about_global"
+        android:layout_below="@+id/privacy_global"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="About"
+            android:drawableLeft="@drawable/info_icon"
+            android:drawablePadding="12dp"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/filter_box_grey_settings"
+        android:id="@+id/faq_global"
+        android:layout_below="@+id/about_global"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="FAQ's"
+            android:drawableLeft="@drawable/faq_icon"
+            android:drawablePadding="12dp"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/filter_box_grey_settings"
+        android:id="@+id/logout_global"
+        android:layout_below="@+id/faq_global"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Logout"
+            android:drawableLeft="@drawable/logout_icon"
+            android:drawablePadding="12dp"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

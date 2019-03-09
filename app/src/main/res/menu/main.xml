@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menunotify"
+        android:orderInCategory="100"
+        android:title="Notification"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuchangepass"
+        android:orderInCategory="100"
+        android:title="Change Password"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menulogout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menufl"
+        android:orderInCategory="100"
+        android:title="Following List"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menufollower"
+        android:orderInCategory="100"
+        android:title="Follower List"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menufind"
+        android:orderInCategory="100"
+        android:title="Find People"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menusearch"
+        android:orderInCategory="100"
+        android:title="Search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always" />
+
+
+
+</menu>

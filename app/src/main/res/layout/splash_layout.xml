@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/get_second"
+            android:layout_weight="1">
+            <TextView
+                android:textColor="@android:color/holo_orange_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Humility, gentleness, and helpfulness go so much further and open doors you cannot imagine."
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:textColor="@android:color/holo_orange_dark"
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Welcome To New Arena"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/get_first"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:background="@drawable/full_logo"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"/>
+
+            <Button
+                android:id="@+id/buttonsub"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="Get Started"
+                android:textAllCaps="false"
+                android:background="@drawable/button_shape"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1a1a1a">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/otherprofile"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <com.alexzh.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ashutosh Kumar"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/attherate"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="3dp"
+                        android:text="UserName"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="ProfileCategory"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Area"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/follow_recru"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="Follow"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/follower_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="Followers : "
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/follower_head"
+                        android:layout_alignBottom="@+id/follower_head"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/follower_head"
+                        android:layout_toRightOf="@+id/follower_head"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/follow_recru"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:background="@drawable/filter_box"-->
+                    <!--android:padding="7dp"-->
+                    <!--android:text="Follow"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:visibility="visible"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:layout_centerVertical="true"/>-->
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/follower_head"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/followed_recru"-->
+        <!--android:layout_alignBottom="@+id/followed_recru"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:text="Followers : "-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_centerVertical="true"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/follower_head"-->
+        <!--android:layout_alignBottom="@+id/follower_head"-->
+        <!--android:layout_toEndOf="@+id/follower_head"-->
+        <!--android:layout_toRightOf="@+id/follower_head"-->
+        <!--android:text="10"-->
+        <!--android:layout_centerVertical="true"/>-->
+
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/follow_recru"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="@drawable/filter_box"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:padding="7dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Follow"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:visibility="visible"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginRight="20dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerVertical="true"/>&ndash;&gt;-->
+
+        <!---->
+
+        <!--</RelativeLayout>-->
+
+        <TextView
+            android:id="@+id/userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/followed_recru"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@drawable/filter_box"-->
+    <!--android:padding="7dp"-->
+    <!--android:text="Followed"-->
+    <!--android:textStyle="bold"-->
+    <!--android:visibility="gone" />-->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MINDZ.iml" filepath="$PROJECT_DIR$/MINDZ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UniversalImageLoader-Library/UniversalImageLoader-Library.iml" filepath="$PROJECT_DIR$/UniversalImageLoader-Library/UniversalImageLoader-Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/explosionfield/explosionfield.iml" filepath="$PROJECT_DIR$/explosionfield/explosionfield.iml" />
+      <module fileurl="file://$PROJECT_DIR$/likebutton/likebutton.iml" filepath="$PROJECT_DIR$/likebutton/likebutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/placesautocomplete/placesautocomplete.iml" filepath="$PROJECT_DIR$/placesautocomplete/placesautocomplete.iml" />
+    </modules>
+  </component>
+</project>

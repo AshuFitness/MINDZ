@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:title="Resume/CV Upload" />
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#41afa4">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:id="@+id/tvHeading"
+        android:text="Upload your Resume / CV to get Instant Job"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/ivAttachment"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_comment_24dp"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/ivAttachment"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/format_text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_file_name"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:text="Supported file formats DOC, DOCX, PDF, RTF,"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/format_text_sec"
+        android:layout_below="@+id/format_text"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:text="Supported : File Manager"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/format_text_third"
+        android:layout_below="@+id/format_text_sec"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="Maximum File Size 2MB"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_upload"
+        android:text="Upload"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="#000"/>
+
+</RelativeLayout>
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/blur_reg1"
+        android:background="#000"
+        android:alpha="0.7"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

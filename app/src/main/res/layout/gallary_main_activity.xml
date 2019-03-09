@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ok"
+            android:background="@drawable/a50green"
+            android:layout_width="match_parent"
+            android:gravity="center|right"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ok"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/tab_background"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner">
+            </Spinner>
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/gv_folder"
+                android:verticalSpacing="2dp"
+                android:horizontalSpacing="2dp"
+                android:nestedScrollingEnabled="false"
+                android:numColumns="3"
+                android:gravity="center">
+            </android.support.v7.widget.RecyclerView>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

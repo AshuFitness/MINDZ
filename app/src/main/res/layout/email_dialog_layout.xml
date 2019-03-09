@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <custom_font.MyEditText
+            android:hint="Enter Your Email"
+            android:id="@+id/email_dialog_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:layout_height="50dp"
+            android:background="@drawable/filter_box_primary_light"
+            android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/cancel_email_dialog"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:focusable="false"
+                android:layout_margin="5dip"
+                android:textColor="#FFF8C6"
+                android:background="@color/colorPrimary"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.5" />
+            <Button
+                android:id="@+id/submit_email_dialog"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:background="@color/colorPrimary"
+                android:focusable="false"
+                android:layout_margin="5dip"
+                android:textColor="#FFF8C6"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

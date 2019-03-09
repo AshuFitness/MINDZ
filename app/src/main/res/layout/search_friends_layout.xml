@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tag_frnd_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:view_borderWidth="2dp"
+        app:view_borderColor="#cccccc"/>
+
+
+        <TextView
+            android:id="@+id/friends_list_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/intrinsic_padding"
+            android:paddingRight="@dimen/intrinsic_padding"
+            android:text="name"
+            android:textAppearance="@style/TextAppearance.Title"
+            android:textStyle="bold" />
+
+  <!--
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/friends_list_names"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            >-->
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/add_tagg"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/add_tagg"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/added_tagg"
+            android:id="@+id/added_tagg"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            />
+
+        <!--</RelativeLayout>-->
+
+
+        <!--#0097D3-->
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

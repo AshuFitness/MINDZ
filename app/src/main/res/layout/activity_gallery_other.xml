@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendRequest.global.GalleryOtherActivity">
+
+
+
+            <!--<android.support.design.widget.TabLayout-->
+                <!--android:id="@+id/tabs_othergallery"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:tabMode="fixed"-->
+                <!--app:tabGravity="fill"/>-->
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs_othergallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            android:background="@color/white"
+            app:elevation="3dp"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabIndicatorColor="@color/colorPrimary"
+            tools:targetApi="lollipop"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            app:tabIndicatorHeight="3dp"
+
+            />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_othergallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff" />
+
+
+
+    </LinearLayout>
+
+
+            <!--<android.support.design.widget.TabLayout-->
+                <!--android:id="@+id/tabs_othergallery"-->
+                <!--android:layout_width="match_parent"-->
+                <!--app:tabIndicatorColor="@color/colorPrimary"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:tabMode="fixed"-->
+                <!--android:fadingEdgeLength="3dp"-->
+                <!--android:animateLayoutChanges="true"-->
+                <!--app:tabIndicatorHeight="3dp"-->
+                <!--android:background="@color/white"-->
+                <!--app:tabGravity="fill"-->
+               <!--/>-->
+
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/viewpager_othergallery"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+
+</LinearLayout>

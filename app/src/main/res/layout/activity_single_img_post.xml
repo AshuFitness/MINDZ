@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_video_img">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp" >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_pic_img"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:view_borderWidth="2dp"
+                            app:view_borderColor="#cccccc"/>
+
+
+                        <EditText
+                            android:id="@+id/status_post_text"
+                            android:inputType="textMultiLine"
+                            android:background="@drawable/filter_box"
+                            android:lines="8"
+                            android:minLines="6"
+                            android:paddingLeft="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:maxLines="10"
+                            android:layout_height="50dp"
+                            android:layout_width="match_parent"
+                            android:scrollbars="vertical"
+                            android:hint="@string/what_s_on_your_mind"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/postitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycler_video_img"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/postImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/post_list_item_image_height"
+                    android:layout_below="@+id/titleusername"
+                    android:layout_marginBottom="@dimen/intrinsic_padding"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="10dp">
+
+                    <custom_font.MyTextVieww
+                        android:id="@+id/post_btn"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="Post"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect1"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:textSize="14dp" />
+
+
+                </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

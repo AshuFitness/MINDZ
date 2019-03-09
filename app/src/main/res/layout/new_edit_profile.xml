@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/grad_color"
+   >
+
+    <!--android:background="@drawable/grad_color"-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+            <custom_font.MyEditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="* Enter Name"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/person"
+               android:background="@drawable/layout_bg" />
+
+        <!--<com.github.florent37.materialtextfield.MaterialTextField-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:mtf_labelColor="#666"-->
+            <!--app:mtf_image="@drawable/person"-->
+            <!--app:mtf_openKeyboardOnFocus="true"-->
+            <!--app:mtf_backgroundColor="#fff"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:background="@drawable/layout_bg"-->
+            <!--&gt;-->
+
+            <!--<custom_font.MyEditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="* Enter Name"-->
+                <!--android:textColor="#333"-->
+                <!--android:textSize="15sp"-->
+                <!--android:id="@+id/edit_name"-->
+                <!--android:inputType="text"-->
+                <!--android:letterSpacing="0.1"-->
+                <!--android:background="#fff"/>-->
+
+        <!--</com.github.florent37.materialtextfield.MaterialTextField>-->
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/layout_bg">
+
+                <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+                    android:id="@+id/autocomplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:hint="* Enter Your Area"
+                    app:pacv_languageCode="en"
+                    app:pacv_resultType="no_type"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@drawable/area1"
+                    android:background="@android:color/transparent"
+                    app:pacv_googleMapsApiKey="@string/google_maps_api_key"
+                    app:pacv_adapterClass="com.mindzglobal.www.mindz.GooglePlace.TestPlacesAutocompleteAdapter"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/dividerarea"
+                android:layout_below="@+id/autocomplete"
+                android:background="#c1c1c1"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/address_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/dividerarea"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/street_city"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Area *"
+                        android:singleLine="true"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="City *"
+                        android:singleLine="true"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fetch"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/street_city">
+
+                    <TextView
+                        android:id="@+id/area"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/filter_box_primary"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text=""
+                        android:background="@drawable/filter_box_primary"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/state_zip"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/fetch"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="State *"
+
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Country *"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fetch2"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/state_zip">
+
+                    <TextView
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/filter_box_primary"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/country"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/filter_box_primary"
+                        android:text=""
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#ACACAC"/>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/layout_bg"
+            >
+
+            <custom_font.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iam"
+                android:layout_centerVertical="true"
+                android:text="I am :"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <custom_font.MyTextView
+                android:id="@+id/choose_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iam"
+                android:layout_toRightOf="@+id/iam"
+                android:layout_marginLeft="10dp"
+                android:text="Choose Your Category" />
+
+        </RelativeLayout>
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#ACACAC"/>-->
+
+       <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textStyle="bold"
+            android:text="Gender"
+            android:paddingLeft="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="4dp"
+           />-->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/gender_rgroup"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male_radiobtn"
+                android:text="Male"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female_radiobtn"
+                android:text="Female"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+
+        <CheckBox
+            android:id="@+id/check_private"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Private"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/layout_bg"/>
+
+
+
+
+        <!--<com.github.florent37.materialtextfield.MaterialTextField-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:mtf_labelColor="#666"-->
+            <!--app:mtf_image="@drawable/birthday"-->
+            <!--app:mtf_backgroundColor="#fff"-->
+            <!--app:mtf_openKeyboardOnFocus="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:background="@drawable/layout_bg"-->
+            <!--&gt;-->
+
+            <!--<custom_font.MyEditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Enter Date of Birth"-->
+                <!--android:textColor="#333"-->
+                <!--android:textSize="15sp"-->
+                <!--android:id="@+id/edit_dob"-->
+                <!--android:inputType="text"-->
+                <!--android:letterSpacing="0.1"-->
+                <!--android:background="@color/white"/>-->
+
+        <!--</com.github.florent37.materialtextfield.MaterialTextField>-->
+
+
+
+        <!--<com.github.florent37.materialtextfield.MaterialTextField-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:mtf_labelColor="#666"-->
+            <!--app:mtf_image="@drawable/pancard"-->
+            <!--app:mtf_backgroundColor="#fff"-->
+            <!--app:mtf_openKeyboardOnFocus="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:background="@drawable/layout_bg"-->
+            <!--&gt;-->
+
+            <!--<custom_font.MyEditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Enter Date of Birth"-->
+                <!--android:textColor="#333"-->
+                <!--android:textSize="15sp"-->
+                <!--android:id="@+id/edit_pan"-->
+                <!--android:inputType="text"-->
+                <!--android:letterSpacing="0.1"-->
+                <!--android:background="@color/white"/>-->
+
+        <!--</com.github.florent37.materialtextfield.MaterialTextField>-->
+
+
+
+
+        <!--<com.github.florent37.materialtextfield.MaterialTextField-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:mtf_labelColor="#666"-->
+            <!--app:mtf_image="@drawable/pancard"-->
+            <!--app:mtf_openKeyboardOnFocus="true"-->
+            <!--app:mtf_backgroundColor="#fff"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:background="@drawable/layout_bg"-->
+            <!--&gt;-->
+
+            <!--<custom_font.MyEditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Enter Adhar"-->
+                <!--android:textColor="#333"-->
+                <!--android:textSize="15sp"-->
+                <!--android:id="@+id/edit_adhar"-->
+                <!--android:inputType="text"-->
+                <!--android:letterSpacing="0.1"-->
+                <!--android:background="@color/white"/>-->
+
+        <!--</com.github.florent37.materialtextfield.MaterialTextField>-->
+
+
+        <custom_font.MyEditText
+        android:id="@+id/edit_dob"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Date of Birth"
+         android:background="@drawable/layout_bg"
+        android:padding="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/birthday"
+        />
+
+
+        <custom_font.MyEditText
+                android:id="@+id/edit_pan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter PAN"
+                android:drawableLeft="@drawable/pancard"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="15dp"
+                 android:background="@drawable/layout_bg"
+                android:padding="8dp"/>
+
+
+            <custom_font.MyEditText
+                android:id="@+id/edit_adhar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter Adhar"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/pancard"
+                 android:background="@drawable/layout_bg"
+                android:padding="8dp"/>
+
+
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Update Profile"
+            android:textColor="@color/edit_profile"
+            android:textAlignment="center"
+            android:background="@drawable/rounded"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#ACACAC"/>-->

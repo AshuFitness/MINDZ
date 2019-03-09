@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Search Wards"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_wards"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/box_search_ward"
+        android:padding="10dp"
+        android:layout_below="@id/toolbar">
+
+    <TableLayout android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Country"
+                android:typeface="normal"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:singleLine="false"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp"
+                android:foregroundGravity="center"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/country_edit"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="normal"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:singleLine="false"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp"
+                android:foregroundGravity="center"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="State"
+                android:typeface="normal"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:singleLine="false"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp"
+                android:foregroundGravity="center"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/state_edit"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="normal"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:singleLine="false"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp"
+                android:foregroundGravity="center"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="City"
+                android:typeface="normal"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:singleLine="false"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp"
+                android:foregroundGravity="center"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/city_edit"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="normal"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:singleLine="false"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp"
+                android:foregroundGravity="center"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3" >
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Area"
+                android:typeface="normal"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:singleLine="false"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp"
+                android:foregroundGravity="center"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/area_edit"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="normal"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:singleLine="false"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp"
+                android:foregroundGravity="center"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        </TableLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginRight="15dp"
+        android:text="NEXT"
+        android:background="@drawable/quizbutton"
+        android:textColor="#ffffff"
+        android:layout_below="@id/tableLayout1"
+        android:layout_alignParentRight="true"
+        android:drawableRight="@drawable/forward_white_24dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

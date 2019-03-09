@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/grad_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/full_logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp">
+
+
+
+        <!--<custom_font.MyEditText
+          android:id="@+id/name"
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:textSize="15sp"
+          android:textColorHint="#aeb0a5"
+          android:hint="Full Name"
+          android:padding="6dp"
+          android:inputType="text"
+          android:letterSpacing="0.1"
+          android:background="@drawable/filter_box"/>-->
+
+        <!--app:mtf_image="@drawable/ic_mail_grey600_24dp"-->
+
+
+
+        <!--android:textColorHint="#aeb0a5"-->
+
+    <!--    <custom_font.MyEditText
+            android:digits="abcdefghijklmnopqrstuvwxyz1234567890@_.-"
+            android:layout_marginTop="5dp"
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="15sp"
+            android:textColorHint="#aeb0a5"
+            android:hint="Choose Name"
+            android:padding="6dp"
+           android:inputType="text"
+            android:letterSpacing="0.1"
+            android:background="@drawable/filter_box"/>
+-->
+
+        <!--      <custom_font.MyEditText
+                  android:id="@+id/phone"
+                  android:layout_width="match_parent"
+                  android:layout_height="45dp"
+                  android:textSize="15sp"
+                  android:textColorHint="#aeb0a5"
+                  android:hint="Phone Number"
+                  android:padding="6dp"
+                  android:inputType="text"
+                  android:letterSpacing="0.1"
+                  android:layout_marginTop="10dp"
+                  android:background="@drawable/filter_box"/>
+      -->
+
+        <!--
+                <custom_font.MyEditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz1234567890@_.-"
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="15sp"
+                    android:textColorHint="#aeb0a5"
+                    android:hint="E-mail"
+                    android:padding="6dp"
+                    android:inputType="text"
+                    android:letterSpacing="0.1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/filter_box"/>-->
+
+
+        <!--  <custom_font.MyEditText
+      android:id="@+id/password"
+      android:padding="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:textSize="15sp"
+      android:inputType="textPassword"
+      android:background="@drawable/filter_box"
+      android:hint="password"
+      android:layout_marginTop="10dp"
+      android:letterSpacing="0.1" />-->
+
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/name2_icon"
+            app:mtf_openKeyboardOnFocus="true"
+            >
+
+            <custom_font.MyEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full name"
+                android:textColor="#333"
+                android:textSize="15sp"
+                android:id="@+id/name"
+                android:inputType="text"
+                android:letterSpacing="0.1"/>
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/chose_nme"
+            app:mtf_openKeyboardOnFocus="true"
+            >
+
+            <custom_font.MyEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Choose name"
+                android:textColor="#333"
+                android:textSize="15sp"
+                android:id="@+id/user_name"
+                android:inputType="text"
+                android:letterSpacing="0.1"
+                android:digits="abcdefghijklmnopqrstuvwxyz1234567890@_.-"/>
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/icon_phone"
+            app:mtf_openKeyboardOnFocus="true"
+            >
+
+            <custom_font.MyEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:textColor="#333"
+                android:textSize="15sp"
+                android:id="@+id/phone"
+                android:inputType="text"
+                android:letterSpacing="0.1"/>
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/email_icn"
+            app:mtf_openKeyboardOnFocus="true"
+            >
+
+            <custom_font.MyEditText
+                android:digits="abcdefghijklmnopqrstuvwxyz1234567890@_.-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColor="#333"
+                android:textSize="15sp"
+                android:id="@+id/email"
+                android:inputType="text"
+                android:letterSpacing="0.1"/>
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@drawable/pass_icon"
+            app:mtf_openKeyboardOnFocus="true"
+            >
+
+            <custom_font.MyEditText
+                android:digits="abcdefghijklmnopqrstuvwxyz1234567890@_.-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="#333"
+                android:textSize="15sp"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:letterSpacing="0.1"/>
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+
+        <CheckBox
+            android:id="@+id/show_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="15sp"
+            android:hint="Show password"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/filter_box_primary"
+            android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Gender"
+            android:layout_marginTop="8dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender_rgroup"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male_radiobtn"
+                android:text="Male" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female_radiobtn"
+                android:layout_marginLeft="25dp"
+                android:text="Female" />
+
+        </RadioGroup>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/check_private"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Private"
+            android:layout_marginTop="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <custom_font.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iam"
+                android:text="I am :"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <custom_font.MyTextView
+                android:id="@+id/choose_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textSize="15sp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/iam"
+                android:hint="Choose Your Category"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/filter_box_primary"
+                android:padding="8dp"
+                android:letterSpacing="0.1" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+                android:id="@+id/autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="15sp"
+                android:layout_gravity="center_horizontal"
+                android:padding="6dp"
+                android:hint="Enter Your Area"
+                android:singleLine="true"
+                android:inputType="textNoSuggestions"
+                app:pacv_languageCode="en"
+                android:ellipsize="end"
+                app:pacv_resultType="no_type"
+                app:pacv_googleMapsApiKey="@string/google_maps_api_key"
+                app:pacv_adapterClass="com.mindzglobal.www.mindz.GooglePlace.TestPlacesAutocompleteAdapter"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/filter_box_primary"
+                android:letterSpacing="0.1" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/address_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/dividerarea"
+                android:padding="10dp"
+                android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/street_city"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Area *"
+                    android:singleLine="true"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="City *"
+                    android:singleLine="true"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fetch"
+                android:orientation="horizontal"
+                android:layout_below="@+id/street_city">
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:background="@drawable/filter_box_primary"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:letterSpacing="0.1" />
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:background="@drawable/filter_box_primary"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:letterSpacing="0.1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/state_zip"
+                android:orientation="horizontal"
+                android:layout_below="@+id/fetch"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="State *"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Country *"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fetch2"
+                android:orientation="horizontal"
+                android:layout_below="@+id/state_zip">
+
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:background="@drawable/filter_box_primary"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:letterSpacing="0.1" />
+
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:background="@drawable/filter_box_primary"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textSize="12dp"
+                    android:letterSpacing="0.1" />
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <custom_font.MyTextView
+                android:id="@+id/signUp"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:text="@string/sign_up"
+                android:textColor="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:background="@drawable/button_shape"/>
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rleftbutton"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

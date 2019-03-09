@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_video_img">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:view_borderWidth="2dp"
+                    app:view_borderColor="#cccccc"/>
+
+
+                <EditText
+                    android:id="@+id/status_post_text"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/filter_box"
+                    android:lines="8"
+                    android:minLines="6"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:maxLines="10"
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:scrollbars="vertical"
+                    android:hint="@string/what_s_on_your_mind"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/filter_box1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/at"
+                        android:text="at"
+                        android:textSize="15dp"
+                        android:layout_centerVertical="true"/>
+
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/at_location"
+                        android:layout_toRightOf="@+id/at"
+                        android:layout_marginLeft="8dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/from"
+                        android:text="#"
+                        android:textSize="15dp"
+                        android:layout_centerVertical="true"/>
+
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category"
+                        android:text=""
+                        android:layout_toRightOf="@+id/from"
+                        android:layout_marginLeft="2dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/postitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycler_video_img"
+                android:layout_marginBottom="20dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/selected_imge"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    android:fitsSystemWindows="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/white_12"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="horizontal">
+
+
+                <custom_font.MyTextVieww
+                    android:id="@+id/check_in_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="location"
+                    android:drawableTop="@drawable/location_add"
+                    android:textSize="8dp"
+                    android:maxLines="2"
+                    android:gravity="center"
+                    android:textColor="@color/icons_counter_color"
+                    android:layout_margin="5dp"/>
+
+                <custom_font.MyTextVieww
+                    android:id="@+id/add_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:drawableTop="@drawable/imagea_addd"
+                    android:gravity="center"
+                    android:textSize="8dp"
+                    android:maxLines="2"
+                    android:text="Images"
+                    android:textColor="@color/icons_counter_color"
+                    android:layout_margin="5dp"/>
+
+
+
+                <custom_font.MyTextVieww
+                    android:id="@+id/add_video"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:drawableTop="@drawable/video_add"
+                    android:text="videos"
+                    android:gravity="center"
+                    android:textColor="@color/icons_counter_color"
+                    android:textSize="8dp"
+                    android:maxLines="2"
+                    android:layout_margin="5dp"/>
+
+
+
+                <custom_font.MyTextVieww
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:drawableTop="@drawable/tag_frnd"
+                    android:textSize="8dp"
+                    android:maxLines="2"
+                    android:gravity="center"
+                    android:id="@+id/tag_friends"
+                    android:textColor="@color/icons_counter_color"
+                    android:text="Tag friends"
+                    android:layout_margin="5dp"/>
+
+
+                <custom_font.MyTextVieww
+                    android:id="@+id/choose_cat"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:drawableTop="@drawable/catgry_add"
+                    android:text="Category"
+                    android:textSize="8dp"
+                    android:maxLines="2"
+                    android:textColor="@color/icons_counter_color"
+                    android:layout_margin="5dp"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right|center_vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <custom_font.MyTextVieww
+                        android:id="@+id/post_btn"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="Post"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect1"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:textSize="14dp"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_below="@+id/bottom"
+            android:background="#fff"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

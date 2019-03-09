@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white_12">
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                tools:targetApi="lollipop"
+                app:cardCornerRadius="2dp"
+                >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#fff">
+
+                <!-- Cover Image -->
+
+                <ImageView
+                    android:id="@+id/cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
+
+                <!-- Round image -->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/edit_cover_pic"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_above="@+id/edit_profile_pic"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="22dp"-->
+                        <!--android:background="@drawable/edit_profile_transparent"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:text="Edit"-->
+                        <!--android:textColor="@android:color/holo_blue_dark"-->
+                        <!--android:textStyle="bold" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/edit_profile_pic"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:text="Edit"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@android:color/holo_blue_dark"-->
+                        <!--android:background="@drawable/edit_profile_transparent"/>-->
+
+                <!--</RelativeLayout>-->
+
+            </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic_img"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="70dp"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp"
+                    />
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:layout_margin="5dp"
+                android:elevation="3dp"
+                tools:targetApi="lollipop"
+                app:cardCornerRadius="2dp"
+                >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/layout_bg"
+                android:layout_margin="5dp">
+
+                <custom_font.MyTextVieww
+                    android:id="@+id/name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="22dp"
+                    android:textColor="@color/title_color"
+                    android:layout_gravity="center"/>
+
+                <custom_font.MyTextVieww
+                    android:id="@+id/location_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:textColor="@color/title_color"
+                    android:textSize="14dp"/>
+
+                <custom_font.MyTextVieww
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--------"
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"/>
+
+
+
+
+                <custom_font.MyTextVieww
+                    android:id="@+id/iam_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/title_color"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+      <!--      <TextView
+                android:id="@+id/edit_profile"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="EDIT PROFILE"
+                android:textColor="@color/edit_profile"
+                android:textAlignment="center"
+                android:background="@drawable/rounded"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"/>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.1dp"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--android:layout_marginTop="2dp"-->
+               <!--/>-->
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:layout_margin="5dp"
+                android:elevation="3dp"
+                tools:targetApi="lollipop"
+                app:cardCornerRadius="2dp"
+                >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/layout_bg"
+                android:layout_margin="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/follow_following"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:id="@+id/follow_user"
+                        android:textSize="18dp"
+                        />
+
+                    <!--<custom_font.MyTextVieww-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Following"-->
+                        <!--android:id="@+id/following_user"-->
+                        <!--android:textColor="@color/title_color"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="18dp"-->
+                        <!--android:visibility="gone"/>-->
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                    android:background="#ACACAC"/>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:id="@+id/poke">-->
+
+                    <!--<custom_font.MyTextVieww-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Poke"-->
+                        <!--android:id="@+id/poke_other"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="18dp"-->
+                       <!--/>-->
+
+
+                    <!--&lt;!&ndash;<custom_font.MyTextVieww&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="Poked"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textColor="@color/colorPrimary"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="16dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/poked"&ndash;&gt;-->
+                        <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+             <!--&lt;!&ndash;       <custom_font.MyTextVieww-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="Followers"-->
+                        <!--android:textSize="14dp"/>&ndash;&gt;-->
+
+                <!--</LinearLayout>-->
+                <!--<View-->
+                    <!--android:layout_width="1dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:background="#ACACAC"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/block">
+
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Block"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:id="@+id/block_other"
+                       />
+
+
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You Blocked"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:visibility="gone"
+                        android:id="@+id/blocked"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.1dp"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--android:layout_marginTop="2dp"-->
+               <!--/>-->
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:layout_margin="5dp"
+                android:elevation="3dp"
+                tools:targetApi="lollipop"
+                app:cardCornerRadius="2dp"
+                >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_bg"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/about"
+                    android:layout_marginTop="10dp">
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                    android:background="#ACACAC"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/gallery_other"
+                    android:layout_marginTop="10dp">
+
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gallery"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                    android:background="#ACACAC"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/follower_count">
+
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp" />
+
+
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Followers"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:background="@drawable/layout_bg"
+                android:layout_margin="5dp"
+                >
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_bg"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    tools:targetApi="lollipop"
+                    app:cardCornerRadius="2dp"
+                    android:id="@+id/mobile_field"
+                    >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                   >
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/image_mobile"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/mob1"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mobile"
+                        android:text="Mobile"
+                        android:layout_toRightOf="@+id/image_mobile"
+                        android:textStyle="bold"
+                        android:textColor="#495C67"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <!--<TextView-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/edit_mobile"-->
+                        <!--android:background="@drawable/edit_profile_black_24dp"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:backgroundTint="@color/colorPrimaryDark"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:layout_marginTop="5dp"/>-->
+
+                    <TextView
+                        android:id="@+id/mobile_fetch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/mobile"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/mobile"
+                        android:text="7795673018" />
+
+
+
+
+                </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_bg"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    tools:targetApi="lollipop"
+                    app:cardCornerRadius="2dp"
+                    android:id="@+id/email_field"
+                    android:layout_below="@+id/mobile_field"
+                    >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                  >
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/image_email"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/email_icn"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/email"
+                        android:text="Email"
+                        android:layout_toRightOf="@+id/image_email"
+                        android:textStyle="bold"
+                        android:textColor="#495C67"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <!--<TextView-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/edit_email"-->
+                        <!--android:background="@drawable/edit_profile_black_24dp"-->
+                        <!--android:backgroundTint="@color/colorPrimaryDark"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:layout_marginTop="5dp"/>-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/email_fetch"
+                        android:layout_below="@+id/email"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/image_email"
+                        android:text="ashuaps90@gmail.com"
+                        android:layout_marginTop="3dp"/>
+
+                </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_bg"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    tools:targetApi="lollipop"
+                    app:cardCornerRadius="2dp"
+                    android:id="@+id/date_of_birth_field"
+                    android:layout_below="@+id/email_field"
+                    >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                  >
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/image_dob"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/pro2"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+
+                    <custom_font.MyTextVieww
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/date_of_birth"
+                        android:text="Date Of Birth"
+                        android:layout_toRightOf="@+id/image_dob"
+                        android:textStyle="bold"
+                        android:textColor="#495C67"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dob_fetch"
+                        android:layout_below="@+id/date_of_birth"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/image_dob"
+                        android:text="7/01/1993"
+                        android:layout_marginTop="3dp"/>
+
+                </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:id="@+id/pan_field"-->
+                    <!--android:layout_below="@+id/date_of_birth_field">-->
+
+                    <!--<com.alexzh.circleimageview.CircleImageView-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:id="@+id/image_pan"-->
+                        <!--android:layout_width="40dp"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:src="@drawable/pro2"-->
+                        <!--app:civ_border_color="#FF000000"-->
+                        <!--app:civ_border_width="2dp" />-->
+
+
+                    <!--<custom_font.MyTextVieww-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/pan"-->
+                        <!--android:text="PAN"-->
+                        <!--android:layout_toRightOf="@+id/image_pan"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="#495C67"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginTop="5dp"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/pan_fetch"-->
+                        <!--android:layout_below="@+id/pan"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:layout_toRightOf="@+id/image_pan"-->
+                        <!--android:text="DSX12372378HVIK"-->
+                        <!--android:layout_marginTop="3dp"/>-->
+
+                <!--</RelativeLayout>-->
+
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:id="@+id/adhar_field"-->
+                    <!--android:layout_below="@+id/pan_field"-->
+                    <!--android:layout_marginBottom="10dp">-->
+
+                    <!--<com.alexzh.circleimageview.CircleImageView-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:id="@+id/image_adhar"-->
+                        <!--android:layout_width="40dp"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:src="@drawable/pro2"-->
+                        <!--app:civ_border_color="#FF000000"-->
+                        <!--app:civ_border_width="2dp" />-->
+
+
+                    <!--<custom_font.MyTextVieww-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/adhar"-->
+                        <!--android:text="ADHAR"-->
+                        <!--android:layout_toRightOf="@+id/image_adhar"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="#495C67"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginTop="5dp"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/adhar_fetch"-->
+                        <!--android:layout_below="@+id/adhar"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:layout_toRightOf="@+id/image_adhar"-->
+                        <!--android:text="400012348237861208972"-->
+                        <!--android:layout_marginTop="3dp"/>-->
+
+                <!--</RelativeLayout>-->
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
